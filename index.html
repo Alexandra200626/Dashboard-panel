@@ -8,57 +8,6 @@
 </head>
 
 <body>
-<div class="main-container">
-</main>
-    <!--Tarjetas de Estadisticas-->
-    <section class="stats-section">
-        <div class="stats-grid">
-            <div class="stat-card">
-            <div class="stat-icon">👥</div>
-            <div class="stat-info">
-                <h3 class="stat-number">1,234</h3>
-                <p class="stat-label">Usuarios</p>
-            </div>
-        </div>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Administrativo</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-
-<!--Tarjetas de Estadisticas-->
-    <section class="stats-cards">
-        <div class="stats-grid">
-            <div class="stat-card">
-            <div class="stat-icon">👥</div>
-            <div class="stat-info">
-                <h3 class="stat-number">1,234</h3>
-                <p class="stat-label">Reportes</p>
-            </div>
-        </div>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Administrativo</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-
-<!--Tarjetas de Estadisticas-->
-    <section class="stats-cards">
-        <div class="stats-grid">
-            <div class="stat-card">
-            <div class="stat-icon">👥</div>
-            <div class="stat-info">
-                <h3 class="stat-number">1,234</h3>
-                <p class="stat-label">Productos</p>
-            </div>
-        </div>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Administrativo</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
-
-<body>
     <!--Header Principal-->
 <header class="header">
     <div class="header-content">
@@ -68,7 +17,6 @@
             <div class="user-avatar">JP</div>
         </div>      
     </div>
-</main>
 
 
 </header>
@@ -77,10 +25,22 @@
         <nav class="sidebar-nav">
             <ul class="nav-list">
                 <li class="nav-item">
-                 <a href="#dashboard"class="nav-link active">
+                <a href="#dashboard"class="nav-link active">
                     <span class="nav-icon">📊</span>
                     <span class="nav-text">Dashboard</span>
-                 </a>
+                </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#productos" class="nav-link">
+                        <span class="nav-icon">📦</span>
+                        <span class="nav-text">Productos</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ventas" class="nav-link">
+                        <span class="nav-icon">📈</span>
+                        <span class="nav-text">Ventas</span>
+                    </a>
                 </li>
                 <li class="nav-item">
                     <a href="#usuarios" class="nav-link">
@@ -100,16 +60,287 @@
                         <span class="nav-text">Reportes</span>
                     </a>
                 </li>
+            </ul>
+        </nav>
+    </aside>
 
-</div>
-    
+
+
     <!--Contenido Principal-->
     <main class="main-content">
-    <div class="content-header">
-        <h2 class="page-title">Dashboard</h2>
-        <p class="page-description">Vista general del sistema
-        </p>
+
+    <section id="dashboard" class="vista">
+    <h2>Dashboard</h2>
+    <p>Vista general del sistema</p>
+
+<!--Tarjetas de Estadisticas-->
+    <section class="stats-section">
+        <div class="stats-grid">
+            <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-info">
+                <h3 class="stat-number">1,234</h3>
+                <p class="stat-label">Usuarios</p>
+            </div>
+        </div>
+
+
+            <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-info">
+                <h3 class="stat-number">1,234</h3>
+                <p class="stat-label">Reportes</p>
+            </div>
+        </div>
+
+
+            <div class="stat-card">
+            <div class="stat-icon">👥</div>
+            <div class="stat-info">
+                <h3 class="stat-number">1,234</h3>
+                <p class="stat-label">Productos</p>
+            </div>
+        </div>
+
+        </div>
+</section>
+        </section>
+
+        <section id="productos" class="vista">
+    <h2>Productos</h2>
+<input type="text" placeholder="Buscar productos..." class="search-input">
+
+<form class="product-form">
+    <h3>Agregar nuevo producto</h3>
+    <div class="form-group">
+        <label for="product-name">Nombre del Producto:</label>
+        <input type="text" id="product-name" name="product-name" required>
     </div>
+    <div class="form-group">
+        <label for="product-price">Precio:</label>
+        <input type="number" id="product-price" name="product-price" required>
+    </div>
+    <div class="form-group">
+        <label for="product-quantity">Cantidad:</label>
+        <input type="number" id="product-quantity" name="product-quantity" required>
+    </div>
+    <button type="submit" class="submit-button">Agregar Producto</button>
+
+</form>
+    <section class="stats-section">
+
+        <div class="products-grid">
+            <div class="product-card">
+            <img src="https://www.e-proyecta.es/uploads/proyecta/kit-digital/ordenador-gratis-kit-digital.jpg" width="150" height="200" alt="Producto">
+            <div class="stat-info">
+            <p class="stat-label">Computadora</p>
+            <h3 class="stat-number">Precio: $450</h3>
+            <p class="stat-label">Cantidad: 50</p>
+            </div>
+        </div>
+
+
+            <div class="product-card">
+            <img src="https://dam.elcorteingles.es/producto/www-001057063614341-00.jpg" width="150" height="200" alt="Producto">
+            <div class="stat-info">
+
+                <p class="stat-label">Teléfono Samsung Galaxy S26</p>
+                <h3 class="stat-number">Precio: $500</h3>
+                <p class="stat-label">Cantidad: 50</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://www.stuffactory.mx/cdn/shop/products/TC501_Tecaldo-1_800x.jpg?v=1667517022" width="150" height="200" alt="Producto">
+            <div class="stat-info">
+
+                <p class="stat-label">Teclado</p>
+                <h3 class="stat-number">Precio: $20</h3>
+                <p class="stat-label">Cantidad: 50</p>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="https://i5.walmartimages.com/seo/2022-Apple-10-9-inch-iPad-Wi-Fi-64GB-Yellow-10th-Generation_e97e7b44-9563-4a4b-ac45-674052f8f2fe.119ee621a17a9f4a29856520cf34ed0d.jpeg" width="150" height="200" alt="Producto">
+            <div class="stat-info">
+
+                <p class="stat-label">iPad 10</p>
+                <h3 class="stat-number">Precio: $600</h3>
+                <p class="stat-label">Cantidad: 50</p>
+            </div>
+        </div>
+    </section>
+        </section>
+
+<section id="ventas" class="vista">
+<div>
+    <h2>Ventas</h2>
+<form class="sale-form">
+    <div class="form-group">
+        <label for="sale-product">Producto:</label>
+        <select id="sale-product" name="sale-product" required>
+            <option value="">Selecciona un producto</option>
+            <option value="computadora">Computadora</option>
+            <option value="telefono">Teléfono Samsung Galaxy S26</option>
+            <option value="teclado">Teclado</option>
+            <option value="ipad">iPad 10</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="sale-quantity">Cantidad:</label>
+        <input type="number" id="sale-quantity" name="sale-quantity" required>
+        <form-group>
+            
+            <label for="sale-date">Fecha de Venta:</label>
+            <input type="date" id="sale-date" name="sale-date" required>
+        </form-group>
+    </div>
+    <button type="submit" class="submit-button">Registrar Venta</button>
+
+</form>
+
+
+<div class="sale-table">
+    <table>
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Cantidad</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Computadora</td>
+                <td>2</td>
+                <td>2024-06-01</td>
+            </tr>
+            <tr>
+                <td>Teléfono Samsung Galaxy S26</td>
+                <td>1</td>
+                <td>2024-06-02</td>
+            </tr>
+                <tr>
+                    <td>Teclado</td>
+                    <td>5</td>
+                    <td>2024-06-03</td>
+                </tr>
+                <tr>
+                    <td>iPad 10</td>
+                    <td>3</td>
+                    <td>2024-06-04</td>
+        </tbody>
+
+    </table>
+</div>
+</section>
+
+<section id="usuarios" class="vista">
+    <h2>Usuarios</h2>
+    <p>Gestión de usuarios</p>
+    <form class="user-form">
+        <h3>Agregar nuevo usuario</h3>
+        <div class="form-group">
+            <label for="user-name">Nombre:</label>
+            <input type="text" id="user-name" name="user-name" required>
+        </div>
+        <div class="form-group">
+            <label for="user-email">Correo Electrónico:</label>
+            <input type="email" id="user-email" name="user-email" required>
+        </div>
+        <div class="form-group">
+            <label for="user-role">Rol:</label>
+            <select id="user-role" name="user-role" required>
+                <option value="">Selecciona un rol</option>
+                <option value="admin">Administrador</option>
+                <option value="editor">Vendedor</option>
+                <option value="viewer">Gerente</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-button">Agregar Usuario</button>
+    </form>
+
+    <div class="users-table">
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Correo Electrónico</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>juan.perez@example.com</td>
+                    <td>Administrador</td>
+                </tr>
+                <tr>
+                    <td>María Gómez</td>
+                    <td>maria.gomez@example.com</td>
+                    <td>Vendedor</td>
+                </tr>
+                    <tr>
+                        <td>Carlos López</td>
+                        <td>carlos.lopez@example.com</td>
+                        <td>Gerente</td>
+                    </tr>
+                    <tr>
+                        <td>Ana Martínez</td>
+                        <td>ana.martinez@example.com</td>
+                        <td>Gerente</td>
+                    </tr>
+
+            </tbody>
+        </table>
+    </div>
+</section>
+
+
+
+<section id="configuracion" class="vista">
+    <h2>Configuración</h2>
+    <p>Ajustes del sistema</p>
+    <form class="settings-form">
+        <div class="form-group">
+            <label for="setting-theme">Tema:</label>
+            <select id="setting-theme" name="setting-theme" required>
+                <option value="">Selecciona un tema</option>
+                <option value="light">Claro</option>
+                <option value="dark">Oscuro</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-button">Guardar Configuración</button>
+    </form>
+
+    <div class="settings-info">
+        <p>Versión del sistema: 1.0.0</p>
+        <p>Última actualización: 2024-06-01</p>
+    </div>
+</section>
+
+<section id="reportes" class="vista">
+    <h2>Reportes</h2>
+    <p>Generación de reportes</p>
+    <form class="report-form">
+        <div class="form-group
+">
+            <label for="report-type">Tipo de Reporte:</label>
+            <select id="report-type" name="report-type" required>
+                <option value="">Selecciona un tipo de reporte</option>
+                <option value="ventas">Ventas</option>
+                <option value="usuarios">Usuarios</option>
+                <option value="productos">Productos</option>
+            </select>
+        </div>
+        <button type="submit" class="submit-button">Generar Reporte</button>
+    </form>
+
+</section>
+
+
 </main>
+
+</div>
 </body>
 </html>
